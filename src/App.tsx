@@ -6,10 +6,9 @@ import { Main } from './packages/ui/Main';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="*" element={<Main />}></Route>
-          <Route path="/main" element={<Main />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
