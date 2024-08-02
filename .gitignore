@@ -8,6 +8,8 @@
 # idde
 .idea
 
+build
+
 # testing
 /coverage
 
